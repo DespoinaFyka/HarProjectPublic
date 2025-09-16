@@ -1,0 +1,294 @@
+The parts of the user's data (and their dimensions):
+Every example has its timestamp, indicating the minute when the example was recorded
+User BEF6C611-50DA-4971-A040-87FB979F3FC1.features_labels.csv.gz has 3451 examples (~3451 minutes of behavior)
+(3451,)
+The primary data files have 225 different sensor-features
+X is the feature matrix. Each row is an example and each column is a sensor-feature:
+(3451, 225)
+The primary data files have 51 context-labels
+Y is the binary label-matrix. Each row represents an example and each column represents a label.
+Value of 1 indicates the label is relevant for the example:
+(3451, 51)
+Y is accompanied by the missing-label-matrix, M.
+Value of 1 indicates that it is best to consider an entry (example-label pair) as 'missing':
+(3451, 51)
+
+How many examples does this user have for each context-label:
+--------------------
+label Sitting - 1265 minutes
+label At main workplace - 719 minutes
+label Indoors - 442 minutes
+label At home - 442 minutes
+label Watching TV - 420 minutes
+label Lying down - 339 minutes
+label Computer work - 213 minutes
+label Eating - 172 minutes
+label Drive - I'm the driver - 118 minutes
+label Walking - 117 minutes
+label Standing - 114 minutes
+label At a restaurant - 109 minutes
+label Drive - I'm a passenger - 95 minutes
+label Doing laundry - 35 minutes
+label In a meeting - 31 minutes
+label Talking - 27 minutes
+label In a car - 26 minutes
+label Running - 0 minutes
+label Bicycling - 0 minutes
+label Sleeping - 0 minutes
+label Lab work - 0 minutes
+label In class - 0 minutes
+label Outside - 0 minutes
+label On a bus - 0 minutes
+label Phone in pocket - 0 minutes
+label Exercise - 0 minutes
+label Cooking - 0 minutes
+label Shopping - 0 minutes
+label Strolling - 0 minutes
+label Drinking (alcohol) - 0 minutes
+label Bathing - shower - 0 minutes
+label Cleaning - 0 minutes
+label Washing dishes - 0 minutes
+label Surfing the internet - 0 minutes
+label At a party - 0 minutes
+label At a bar - 0 minutes
+label At the beach - 0 minutes
+label Singing - 0 minutes
+label Toilet - 0 minutes
+label Grooming - 0 minutes
+label Dressing - 0 minutes
+label At the gym - 0 minutes
+label Stairs - going up - 0 minutes
+label Stairs - going down - 0 minutes
+label Elevator - 0 minutes
+label At school - 0 minutes
+label Phone in hand - 0 minutes
+label Phone in bag - 0 minutes
+label Phone on table - 0 minutes
+label With co-workers - 0 minutes
+label With friends - 0 minutes
+
+  0) Acc        raw_acc:magnitude_stats:mean
+  1) Acc        raw_acc:magnitude_stats:std
+  2) Acc        raw_acc:magnitude_stats:moment3
+  3) Acc        raw_acc:magnitude_stats:moment4
+  4) Acc        raw_acc:magnitude_stats:percentile25
+  5) Acc        raw_acc:magnitude_stats:percentile50
+  6) Acc        raw_acc:magnitude_stats:percentile75
+  7) Acc        raw_acc:magnitude_stats:value_entropy
+  8) Acc        raw_acc:magnitude_stats:time_entropy
+  9) Acc        raw_acc:magnitude_spectrum:log_energy_band0
+ 10) Acc        raw_acc:magnitude_spectrum:log_energy_band1
+ 11) Acc        raw_acc:magnitude_spectrum:log_energy_band2
+ 12) Acc        raw_acc:magnitude_spectrum:log_energy_band3
+ 13) Acc        raw_acc:magnitude_spectrum:log_energy_band4
+ 14) Acc        raw_acc:magnitude_spectrum:spectral_entropy
+ 15) Acc        raw_acc:magnitude_autocorrelation:period
+ 16) Acc        raw_acc:magnitude_autocorrelation:normalized_ac
+ 17) Acc        raw_acc:3d:mean_x
+ 18) Acc        raw_acc:3d:mean_y
+ 19) Acc        raw_acc:3d:mean_z
+ 20) Acc        raw_acc:3d:std_x
+ 21) Acc        raw_acc:3d:std_y
+ 22) Acc        raw_acc:3d:std_z
+ 23) Acc        raw_acc:3d:ro_xy
+ 24) Acc        raw_acc:3d:ro_xz
+ 25) Acc        raw_acc:3d:ro_yz
+ 26) Gyro       proc_gyro:magnitude_stats:mean
+ 27) Gyro       proc_gyro:magnitude_stats:std
+ 28) Gyro       proc_gyro:magnitude_stats:moment3
+ 29) Gyro       proc_gyro:magnitude_stats:moment4
+ 30) Gyro       proc_gyro:magnitude_stats:percentile25
+ 31) Gyro       proc_gyro:magnitude_stats:percentile50
+ 32) Gyro       proc_gyro:magnitude_stats:percentile75
+ 33) Gyro       proc_gyro:magnitude_stats:value_entropy
+ 34) Gyro       proc_gyro:magnitude_stats:time_entropy
+ 35) Gyro       proc_gyro:magnitude_spectrum:log_energy_band0
+ 36) Gyro       proc_gyro:magnitude_spectrum:log_energy_band1
+ 37) Gyro       proc_gyro:magnitude_spectrum:log_energy_band2
+ 38) Gyro       proc_gyro:magnitude_spectrum:log_energy_band3
+ 39) Gyro       proc_gyro:magnitude_spectrum:log_energy_band4
+ 40) Gyro       proc_gyro:magnitude_spectrum:spectral_entropy
+ 41) Gyro       proc_gyro:magnitude_autocorrelation:period
+ 42) Gyro       proc_gyro:magnitude_autocorrelation:normalized_ac
+ 43) Gyro       proc_gyro:3d:mean_x
+ 44) Gyro       proc_gyro:3d:mean_y
+ 45) Gyro       proc_gyro:3d:mean_z
+ 46) Gyro       proc_gyro:3d:std_x
+ 47) Gyro       proc_gyro:3d:std_y
+ 48) Gyro       proc_gyro:3d:std_z
+ 49) Gyro       proc_gyro:3d:ro_xy
+ 50) Gyro       proc_gyro:3d:ro_xz
+ 51) Gyro       proc_gyro:3d:ro_yz
+ 52) Magnet     raw_magnet:magnitude_stats:mean
+ 53) Magnet     raw_magnet:magnitude_stats:std
+ 54) Magnet     raw_magnet:magnitude_stats:moment3
+ 55) Magnet     raw_magnet:magnitude_stats:moment4
+ 56) Magnet     raw_magnet:magnitude_stats:percentile25
+ 57) Magnet     raw_magnet:magnitude_stats:percentile50
+ 58) Magnet     raw_magnet:magnitude_stats:percentile75
+ 59) Magnet     raw_magnet:magnitude_stats:value_entropy
+ 60) Magnet     raw_magnet:magnitude_stats:time_entropy
+ 61) Magnet     raw_magnet:magnitude_spectrum:log_energy_band0
+ 62) Magnet     raw_magnet:magnitude_spectrum:log_energy_band1
+ 63) Magnet     raw_magnet:magnitude_spectrum:log_energy_band2
+ 64) Magnet     raw_magnet:magnitude_spectrum:log_energy_band3
+ 65) Magnet     raw_magnet:magnitude_spectrum:log_energy_band4
+ 66) Magnet     raw_magnet:magnitude_spectrum:spectral_entropy
+ 67) Magnet     raw_magnet:magnitude_autocorrelation:period
+ 68) Magnet     raw_magnet:magnitude_autocorrelation:normalized_ac
+ 69) Magnet     raw_magnet:3d:mean_x
+ 70) Magnet     raw_magnet:3d:mean_y
+ 71) Magnet     raw_magnet:3d:mean_z
+ 72) Magnet     raw_magnet:3d:std_x
+ 73) Magnet     raw_magnet:3d:std_y
+ 74) Magnet     raw_magnet:3d:std_z
+ 75) Magnet     raw_magnet:3d:ro_xy
+ 76) Magnet     raw_magnet:3d:ro_xz
+ 77) Magnet     raw_magnet:3d:ro_yz
+ 78) Magnet     raw_magnet:avr_cosine_similarity_lag_range0
+ 79) Magnet     raw_magnet:avr_cosine_similarity_lag_range1
+ 80) Magnet     raw_magnet:avr_cosine_similarity_lag_range2
+ 81) Magnet     raw_magnet:avr_cosine_similarity_lag_range3
+ 82) Magnet     raw_magnet:avr_cosine_similarity_lag_range4
+ 83) WAcc       watch_acceleration:magnitude_stats:mean
+ 84) WAcc       watch_acceleration:magnitude_stats:std
+ 85) WAcc       watch_acceleration:magnitude_stats:moment3
+ 86) WAcc       watch_acceleration:magnitude_stats:moment4
+ 87) WAcc       watch_acceleration:magnitude_stats:percentile25
+ 88) WAcc       watch_acceleration:magnitude_stats:percentile50
+ 89) WAcc       watch_acceleration:magnitude_stats:percentile75
+ 90) WAcc       watch_acceleration:magnitude_stats:value_entropy
+ 91) WAcc       watch_acceleration:magnitude_stats:time_entropy
+ 92) WAcc       watch_acceleration:magnitude_spectrum:log_energy_band0
+ 93) WAcc       watch_acceleration:magnitude_spectrum:log_energy_band1
+ 94) WAcc       watch_acceleration:magnitude_spectrum:log_energy_band2
+ 95) WAcc       watch_acceleration:magnitude_spectrum:log_energy_band3
+ 96) WAcc       watch_acceleration:magnitude_spectrum:log_energy_band4
+ 97) WAcc       watch_acceleration:magnitude_spectrum:spectral_entropy
+ 98) WAcc       watch_acceleration:magnitude_autocorrelation:period
+ 99) WAcc       watch_acceleration:magnitude_autocorrelation:normalized_ac
+100) WAcc       watch_acceleration:3d:mean_x
+101) WAcc       watch_acceleration:3d:mean_y
+102) WAcc       watch_acceleration:3d:mean_z
+103) WAcc       watch_acceleration:3d:std_x
+104) WAcc       watch_acceleration:3d:std_y
+105) WAcc       watch_acceleration:3d:std_z
+106) WAcc       watch_acceleration:3d:ro_xy
+107) WAcc       watch_acceleration:3d:ro_xz
+108) WAcc       watch_acceleration:3d:ro_yz
+109) WAcc       watch_acceleration:spectrum:x_log_energy_band0
+110) WAcc       watch_acceleration:spectrum:x_log_energy_band1
+111) WAcc       watch_acceleration:spectrum:x_log_energy_band2
+112) WAcc       watch_acceleration:spectrum:x_log_energy_band3
+113) WAcc       watch_acceleration:spectrum:x_log_energy_band4
+114) WAcc       watch_acceleration:spectrum:y_log_energy_band0
+115) WAcc       watch_acceleration:spectrum:y_log_energy_band1
+116) WAcc       watch_acceleration:spectrum:y_log_energy_band2
+117) WAcc       watch_acceleration:spectrum:y_log_energy_band3
+118) WAcc       watch_acceleration:spectrum:y_log_energy_band4
+119) WAcc       watch_acceleration:spectrum:z_log_energy_band0
+120) WAcc       watch_acceleration:spectrum:z_log_energy_band1
+121) WAcc       watch_acceleration:spectrum:z_log_energy_band2
+122) WAcc       watch_acceleration:spectrum:z_log_energy_band3
+123) WAcc       watch_acceleration:spectrum:z_log_energy_band4
+124) WAcc       watch_acceleration:relative_directions:avr_cosine_similarity_lag_range0
+125) WAcc       watch_acceleration:relative_directions:avr_cosine_similarity_lag_range1
+126) WAcc       watch_acceleration:relative_directions:avr_cosine_similarity_lag_range2
+127) WAcc       watch_acceleration:relative_directions:avr_cosine_similarity_lag_range3
+128) WAcc       watch_acceleration:relative_directions:avr_cosine_similarity_lag_range4
+129) Compass    watch_heading:mean_cos
+130) Compass    watch_heading:std_cos
+131) Compass    watch_heading:mom3_cos
+132) Compass    watch_heading:mom4_cos
+133) Compass    watch_heading:mean_sin
+134) Compass    watch_heading:std_sin
+135) Compass    watch_heading:mom3_sin
+136) Compass    watch_heading:mom4_sin
+137) Compass    watch_heading:entropy_8bins
+138) Loc        location:num_valid_updates
+139) Loc        location:log_latitude_range
+140) Loc        location:log_longitude_range
+141) Loc        location:min_altitude
+142) Loc        location:max_altitude
+143) Loc        location:min_speed
+144) Loc        location:max_speed
+145) Loc        location:best_horizontal_accuracy
+146) Loc        location:best_vertical_accuracy
+147) Loc        location:diameter
+148) Loc        location:log_diameter
+149) Loc        location_quick_features:std_lat
+150) Loc        location_quick_features:std_long
+151) Loc        location_quick_features:lat_change
+152) Loc        location_quick_features:long_change
+153) Loc        location_quick_features:mean_abs_lat_deriv
+154) Loc        location_quick_features:mean_abs_long_deriv
+155) Aud        audio_naive:mfcc0:mean
+156) Aud        audio_naive:mfcc1:mean
+157) Aud        audio_naive:mfcc2:mean
+158) Aud        audio_naive:mfcc3:mean
+159) Aud        audio_naive:mfcc4:mean
+160) Aud        audio_naive:mfcc5:mean
+161) Aud        audio_naive:mfcc6:mean
+162) Aud        audio_naive:mfcc7:mean
+163) Aud        audio_naive:mfcc8:mean
+164) Aud        audio_naive:mfcc9:mean
+165) Aud        audio_naive:mfcc10:mean
+166) Aud        audio_naive:mfcc11:mean
+167) Aud        audio_naive:mfcc12:mean
+168) Aud        audio_naive:mfcc0:std
+169) Aud        audio_naive:mfcc1:std
+170) Aud        audio_naive:mfcc2:std
+171) Aud        audio_naive:mfcc3:std
+172) Aud        audio_naive:mfcc4:std
+173) Aud        audio_naive:mfcc5:std
+174) Aud        audio_naive:mfcc6:std
+175) Aud        audio_naive:mfcc7:std
+176) Aud        audio_naive:mfcc8:std
+177) Aud        audio_naive:mfcc9:std
+178) Aud        audio_naive:mfcc10:std
+179) Aud        audio_naive:mfcc11:std
+180) Aud        audio_naive:mfcc12:std
+181) AP         audio_properties:max_abs_value
+182) AP         audio_properties:normalization_multiplier
+183) PS         discrete:app_state:is_active
+184) PS         discrete:app_state:is_inactive
+185) PS         discrete:app_state:is_background
+186) PS         discrete:app_state:missing
+187) PS         discrete:battery_plugged:is_ac
+188) PS         discrete:battery_plugged:is_usb
+189) PS         discrete:battery_plugged:is_wireless
+190) PS         discrete:battery_plugged:missing
+191) PS         discrete:battery_state:is_unknown
+192) PS         discrete:battery_state:is_unplugged
+193) PS         discrete:battery_state:is_not_charging
+194) PS         discrete:battery_state:is_discharging
+195) PS         discrete:battery_state:is_charging
+196) PS         discrete:battery_state:is_full
+197) PS         discrete:battery_state:missing
+198) PS         discrete:on_the_phone:is_False
+199) PS         discrete:on_the_phone:is_True
+200) PS         discrete:on_the_phone:missing
+201) PS         discrete:ringer_mode:is_normal
+202) PS         discrete:ringer_mode:is_silent_no_vibrate
+203) PS         discrete:ringer_mode:is_silent_with_vibrate
+204) PS         discrete:ringer_mode:missing
+205) PS         discrete:wifi_status:is_not_reachable
+206) PS         discrete:wifi_status:is_reachable_via_wifi
+207) PS         discrete:wifi_status:is_reachable_via_wwan
+208) PS         discrete:wifi_status:missing
+209) LF         lf_measurements:light
+210) LF         lf_measurements:pressure
+211) LF         lf_measurements:proximity_cm
+212) LF         lf_measurements:proximity
+213) LF         lf_measurements:relative_humidity
+214) LF         lf_measurements:battery_level
+215) LF         lf_measurements:screen_brightness
+216) LF         lf_measurements:temperature_ambient
+217) PS         discrete:time_of_day:between0and6
+218) PS         discrete:time_of_day:between3and9
+219) PS         discrete:time_of_day:between6and12
+220) PS         discrete:time_of_day:between9and15
+221) PS         discrete:time_of_day:between12and18
+222) PS         discrete:time_of_day:between15and21
+223) PS         discrete:time_of_day:between18and24
+224) PS         discrete:time_of_day:between21and3
