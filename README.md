@@ -15,8 +15,7 @@ The workflow includes:
 - Comparative analysis of model performance (accuracy, F1-score, balanced accuracy)
 
 ## Repository Structure
-<ul>
-  <li>HarProjectPublic/
+HarProjectPublic/
     <ul>
       <li>main_logistic_regression.py # Train/test logistic regression model</li>
       <li>main_cnn.py                 # CNN-based activity recognition</li>
@@ -43,8 +42,6 @@ The workflow includes:
       <li>requirements.txt                # Python dependencies</li>
       <li>README.md                       # This file</li>
     </ul>
-  </li>
-</ul>
 
 ## Installation & Setup
 
@@ -57,6 +54,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/DespoinaFyka/HarProjectPublic.git
 cd HarProjectPublic
+
 
 
 
