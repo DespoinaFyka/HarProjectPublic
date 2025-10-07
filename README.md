@@ -16,6 +16,19 @@ The workflow includes:
 
 ## Repository Structure
 
+<ul>
+  <li>HarProjectPublic/
+    <ul>
+      <li>main_logistic_regression.py # Train/test logistic regression model</li>
+      <li>main_hmm.py # Hidden Markov Model pipeline</li>
+      <li>main_cnn.py # CNN-based activity recognition</li>
+      <li>main_lstm.py # LSTM-based activity recognition</li>
+      <li>main_cnn_lstm.py # Hybrid CNN-LSTM model</li>
+    </ul>
+  </li>
+  <li>Fourth item</li>
+</ul>
+
 HarProjectPublic/
 │
 ├── main_logistic_regression.py     # Train/test logistic regression model
@@ -53,3 +66,4 @@ Clone the repository:
 ```bash
 git clone https://github.com/DespoinaFyka/HarProjectPublic.git
 cd HarProjectPublic
+
