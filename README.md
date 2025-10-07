@@ -1,7 +1,7 @@
 # Human Activity Recognition Project (HARProjectPublic)
 
 This repository contains the full pipeline for Human Activity Recognition (HAR) based on the ExtraSensory dataset.  
-It includes data preprocessing, feature extraction, label grouping, model training (Logistic Regression, HMM, CNN, LSTM, CNN-LSTM), and comparative evaluation across unseen users.
+It includes data preprocessing, feature extraction, label grouping, model training (Logistic Regression, CNN, LSTM, CNN-LSTM), and comparative evaluation across unseen users.
 
 ## Overview
 
@@ -80,7 +80,6 @@ Each main file represents a specific model pipeline:
 | Model | Script | Description |
 |-------|---------|-------------|
 | Logistic Regression | main_logistic_regression.py | Baseline model for user-independent evaluation |
-| HMM | main_hmm.py | Sequential model for temporal activity prediction |
 | CNN | main_cnn.py | Convolutional model for sensor-based feature windows |
 | LSTM | main_lstm.py | Recurrent model for sequential time-series learning |
 | CNN-LSTM | main_cnn_lstm.py | Hybrid deep learning model combining spatial and temporal features |
@@ -128,7 +127,7 @@ The data are grouped into:
 Example findings:
 - CNN-LSTM achieved the highest performance among all tested models.
 - Logistic Regression provided strong baseline generalization.
-- Temporal models (HMM, LSTM) improved recognition of continuous activities (e.g., walking).
+- Temporal models (CNN, LSTM) improved recognition of continuous activities (e.g., walking).
 
 
 ## Future Work
@@ -150,9 +149,15 @@ Steps:
 4. Push to the branch and open a Pull Request
 
 
-## Author
+## License
 
-Despoina Fyka  
+Distributed under the MIT License.
+See the LICENSE file for details.
+
+
+## Contact
+
+Despoina Fyka - despoinafyka@gmail.com
 GitHub: https://github.com/DespoinaFyka
 
 
@@ -160,4 +165,5 @@ GitHub: https://github.com/DespoinaFyka
 
 - Vaizman, Y., Ellis, K., & Lanckriet, G. (2017). Recognizing detailed human context in the wild from smartphones and smartwatches data.
 - ExtraSensory Dataset: https://github.com/ExtraSensoryDataset/ExtraSensory
+
 
