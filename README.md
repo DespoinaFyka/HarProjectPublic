@@ -18,7 +18,7 @@ The workflow includes:
 HarProjectPublic/
     <ul>
       <li>main_logistic_regression.py </li>
-          Train/test logistic regression model
+          Basic logistic regression model
       <li>main_cnn.py                 </li>
           CNN-based activity recognition
       <li>main_lstm.py                </li>
@@ -69,6 +69,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/DespoinaFyka/HarProjectPublic.git
 cd HarProjectPublic
+
 
 
 
