@@ -20,10 +20,20 @@ The workflow includes:
   <li>HarProjectPublic/
     <ul>
       <li>main_logistic_regression.py # Train/test logistic regression model</li>
-      <li>main_hmm.py # Hidden Markov Model pipeline</li>
-      <li>main_cnn.py # CNN-based activity recognition</li>
-      <li>main_lstm.py # LSTM-based activity recognition</li>
-      <li>main_cnn_lstm.py # Hybrid CNN-LSTM model</li>
+      <li>main_hmm.py                 # Hidden Markov Model pipeline</li>
+      <li>main_cnn.py                 # CNN-based activity recognition</li>
+      <li>main_lstm.py                # LSTM-based activity recognition</li>
+      <li>main_cnn_lstm.py            # Hybrid CNN-LSTM model</li>
+      <li>utils/                      # Helper functions (data loading, feature projection, etc.)
+          <ul>
+            <li>data_loading.py</li>
+            <li>data_processing.py</li>
+            <li>evaluation_metrics.py</li>
+            <li>labels_utils.py</li>
+            <li>load_train_test_uuids.py</li>
+            <li>plotting.py</li>
+          </ul>
+      </li>
     </ul>
   </li>
   <li>Fourth item</li>
@@ -66,4 +76,5 @@ Clone the repository:
 ```bash
 git clone https://github.com/DespoinaFyka/HarProjectPublic.git
 cd HarProjectPublic
+
 
