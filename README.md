@@ -44,7 +44,6 @@ The workflow includes:
       <li>README.md                       # This file</li>
     </ul>
   </li>
-  <li>Fourth item</li>
 </ul>
 
 ## Installation & Setup
@@ -58,6 +57,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/DespoinaFyka/HarProjectPublic.git
 cd HarProjectPublic
+
 
 
 
