@@ -74,7 +74,7 @@ HarProjectPublic/
    pip install -r requirements.txt
 
 ### Usage
------
+
 Each main file represents a specific model pipeline:
 
 | Model | Script | Description |
@@ -100,7 +100,7 @@ Example commands:
 
 
 ## Evaluation
-----------
+
 Each model is trained on 4/5 of the users and tested on the remaining unseen 1/5.
 Metrics include:
 - Accuracy
@@ -112,7 +112,7 @@ Metrics include:
 Results per fold and per user are stored in the "results/" folder.
 
 ## Dataset
--------
+
 This project uses the ExtraSensory Dataset (Vaizman et al., 2017).
 It includes multimodal data from 60 participants, each with:
 - Smartphone and smartwatch sensor features (Acc, Gyro, WAcc, etc.)
@@ -124,7 +124,7 @@ The data are grouped into:
 
 
 ## Results
--------
+
 Example findings:
 - CNN-LSTM achieved the highest performance among all tested models.
 - Logistic Regression provided strong baseline generalization.
@@ -132,14 +132,14 @@ Example findings:
 
 
 ## Future Work
------------
+
 - Fine-tune deep models with attention mechanisms
 - Extend to real-time inference
 - Improve label balancing and augmentation techniques
 
 
 ## Contributing
-------------
+
 Contributions are welcome.
 Feel free to open an issue, suggest improvements, or submit a pull request.
 
@@ -151,12 +151,13 @@ Steps:
 
 
 ## Author
-------
+
 Despoina Fyka  
 GitHub: https://github.com/DespoinaFyka
 
 
 ## References
-----------
+
 - Vaizman, Y., Ellis, K., & Lanckriet, G. (2017). Recognizing detailed human context in the wild from smartphones and smartwatches data.
 - ExtraSensory Dataset: https://github.com/ExtraSensoryDataset/ExtraSensory
+
