@@ -15,15 +15,17 @@ The workflow includes:
 - Comparative analysis of model performance (accuracy, F1-score, balanced accuracy)
 
 ## Repository Structure
-
 <ul>
   <li>HarProjectPublic/
     <ul>
       <li>main_logistic_regression.py # Train/test logistic regression model</li>
-      <li>main_hmm.py                 # Hidden Markov Model pipeline</li>
       <li>main_cnn.py                 # CNN-based activity recognition</li>
       <li>main_lstm.py                # LSTM-based activity recognition</li>
       <li>main_cnn_lstm.py            # Hybrid CNN-LSTM model</li>
+      <li>main_data_analysis.py       </li>
+      <li>compare_models.py           # Comparison of all trained models</li>
+      <li>analyze_labels_correlation.py   # Label co-occurrence analysis</li>
+      <li>analyze_label_correlation_w_timestamps.py</li>
       <li>utils/                      # Helper functions (data loading, feature projection, etc.)
           <ul>
             <li>data_loading.py</li>
@@ -34,41 +36,21 @@ The workflow includes:
             <li>plotting.py</li>
           </ul>
       </li>
+      <li>results/       # Model evaluation results and metrics per fold/user</li>
+      <li>cv_5_folds/    # User UUID splits for 5-fold cross-validation</li>
+      <li>ExtraSensory.per_uuid_features_labels/   # Per-user data files from ExtraSensory dataset</li>
+      <li>open_npy_files.py               # Utility for loading stored NumPy results</li>
+      <li>requirements.txt                # Python dependencies</li>
+      <li>README.md                       # This file</li>
     </ul>
   </li>
   <li>Fourth item</li>
 </ul>
 
-HarProjectPublic/
-│
-├── main_logistic_regression.py     # Train/test logistic regression model
-├── main_hmm.py                     # Hidden Markov Model pipeline
-├── main_cnn.py                     # CNN-based activity recognition
-├── main_lstm.py                    # LSTM-based activity recognition
-├── main_cnn_lstm.py                # Hybrid CNN-LSTM model
-│
-├── utils/                          # Helper functions (data loading, feature projection, etc.)
-│   ├── load_train_test_uuids.py
-│   ├── standardization_utils.py
-│   ├── feature_extraction.py
-│   └── ...
-│
-├── results/                        # Model evaluation results and metrics per fold/user
-├── cv_5_folds/                     # User UUID splits for 5-fold cross-validation
-├── ExtraSensory.per_uuid_features_labels/   # Per-user data files
-│
-├── compare_models.py               # Comparison of all trained models
-├── analyze_labels_correlation.py   # Label co-occurrence analysis
-├── analyze_label_correlation_w_timestamps.py
-├── open_npy_files.py               # Utility for loading stored NumPy results
-│
-├── requirements.txt                # Python dependencies
-└── README.md                       # This file
-
 ## Installation & Setup
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.13.3 / 3.11.8
 - pip and virtual environment recommended
 
 ### Installation
@@ -76,5 +58,6 @@ Clone the repository:
 ```bash
 git clone https://github.com/DespoinaFyka/HarProjectPublic.git
 cd HarProjectPublic
+
 
 
