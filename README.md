@@ -18,15 +18,20 @@ The workflow includes:
 HarProjectPublic/
     <ul>
       <li>main_logistic_regression.py #Train/test logistic regression model</li>
-          > Train/test logistic regression model
+          Train/test logistic regression model
       <li>main_cnn.py                 # CNN-based activity recognition</li>
+          CNN-based activity recognition
       <li>main_lstm.py                # LSTM-based activity recognition</li>
+          LSTM-based activity recognition
       <li>main_cnn_lstm.py            # Hybrid CNN-LSTM model</li>
+          Hybrid CNN-LSTM model
       <li>main_data_analysis.py       </li>
       <li>compare_models.py           # Comparison of all trained models</li>
+          Comparison of all trained models
       <li>analyze_labels_correlation.py   # Label co-occurrence analysis</li>
       <li>analyze_label_correlation_w_timestamps.py</li>
       <li>utils/                      # Helper functions (data loading, feature projection, etc.)
+          Helper functions (data loading, feature projection, etc.)
           <ul>
             <li>data_loading.py</li>
             <li>data_processing.py</li>
@@ -55,6 +60,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/DespoinaFyka/HarProjectPublic.git
 cd HarProjectPublic
+
 
 
 
