@@ -17,21 +17,22 @@ The workflow includes:
 ## Repository Structure
 HarProjectPublic/
     <ul>
-      <li>main_logistic_regression.py #Train/test logistic regression model</li>
+      <li>main_logistic_regression.py </li>
           Train/test logistic regression model
-      <li>main_cnn.py                 # CNN-based activity recognition</li>
+      <li>main_cnn.py                 </li>
           CNN-based activity recognition
-      <li>main_lstm.py                # LSTM-based activity recognition</li>
+      <li>main_lstm.py                </li>
           LSTM-based activity recognition
-      <li>main_cnn_lstm.py            # Hybrid CNN-LSTM model</li>
+      <li>main_cnn_lstm.py            </li>
           Hybrid CNN-LSTM model
       <li>main_data_analysis.py       </li>
-      <li>compare_models.py           # Comparison of all trained models</li>
+      <li>compare_models.py           </li>
           Comparison of all trained models
-      <li>analyze_labels_correlation.py   # Label co-occurrence analysis</li>
+      <li>analyze_labels_correlation.py   </li>
+          Label co-occurrence analysis
       <li>analyze_label_correlation_w_timestamps.py</li>
-      <li>utils/                      # Helper functions (data loading, feature projection, etc.)
-          Helper functions (data loading, feature projection, etc.)
+      <li>utils/                      
+          (Helper functions (data loading, feature projection, etc.))
           <ul>
             <li>data_loading.py</li>
             <li>data_processing.py</li>
@@ -42,11 +43,16 @@ HarProjectPublic/
           </ul>
       </li>
       <li>results/       # Model evaluation results and metrics per fold/user</li>
-      <li>cv_5_folds/    # User UUID splits for 5-fold cross-validation</li>
-      <li>ExtraSensory.per_uuid_features_labels/   # Per-user data files from ExtraSensory dataset</li>
-      <li>open_npy_files.py               # Utility for loading stored NumPy results</li>
-      <li>requirements.txt                # Python dependencies</li>
-      <li>README.md                       # This file</li>
+      <li>cv_5_folds/    </li>
+          User UUID splits for 5-fold cross-validation
+      <li>ExtraSensory.per_uuid_features_labels/   </li>
+          Per-user data files from ExtraSensory dataset
+      <li>open_npy_files.py               </li>
+          Utility for loading stored NumPy results
+      <li>requirements.txt                </li>
+          Python dependencies
+      <li>README.md                       </li>
+          This file
     </ul>
 
 ## Installation & Setup
@@ -60,6 +66,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/DespoinaFyka/HarProjectPublic.git
 cd HarProjectPublic
+
 
 
 
