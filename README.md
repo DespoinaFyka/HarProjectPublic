@@ -15,6 +15,7 @@ The workflow includes:
 - Comparative analysis of model performance (accuracy, F1-score, balanced accuracy)
 
 ## Repository Structure
+
 HarProjectPublic/
     <ul>
       <li>main_logistic_regression.py </li>
@@ -64,19 +65,98 @@ HarProjectPublic/
 - Python 3.13.3 and 3.11.8
 - pip and virtual environment recommended
 
-### Installation
-Clone the repository:
-```bash
-git clone https://github.com/DespoinaFyka/HarProjectPublic.git
-cd HarProjectPublic
+### Installation:
+1. Clone the repository:
+   git clone https://github.com/DespoinaFyka/HarProjectPublic.git
+   cd HarProjectPublic
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+### Usage
+-----
+Each main file represents a specific model pipeline:
+
+| Model | Script | Description |
+|-------|---------|-------------|
+| Logistic Regression | main_logistic_regression.py | Baseline model for user-independent evaluation |
+| HMM | main_hmm.py | Sequential model for temporal activity prediction |
+| CNN | main_cnn.py | Convolutional model for sensor-based feature windows |
+| LSTM | main_lstm.py | Recurrent model for sequential time-series learning |
+| CNN-LSTM | main_cnn_lstm.py | Hybrid deep learning model combining spatial and temporal features |
+
+Example commands:
+- Train and evaluate a CNN model:
+  python main_cnn.py
+
+- Train the LSTM model:
+  python main_lstm.py
+
+- Compare all models’ results:
+  python compare_models.py
+
+- Analyze label correlations:
+  python analyze_labels_correlation.py
 
 
+## Evaluation
+----------
+Each model is trained on 4/5 of the users and tested on the remaining unseen 1/5.
+Metrics include:
+- Accuracy
+- Balanced Accuracy
+- Precision / Recall / F1-Score
+- Confusion Matrix
+- Sensitivity / Specificity
+
+Results per fold and per user are stored in the "results/" folder.
+
+## Dataset
+-------
+This project uses the ExtraSensory Dataset (Vaizman et al., 2017).
+It includes multimodal data from 60 participants, each with:
+- Smartphone and smartwatch sensor features (Acc, Gyro, WAcc, etc.)
+- Self-reported activity labels (e.g., Sitting, Walking, At home)
+
+The data are grouped into:
+- Main activity labels (mutually exclusive postures)
+- Secondary contextual labels (multi-label environments and activities)
 
 
+## Results
+-------
+Example findings:
+- CNN-LSTM achieved the highest performance among all tested models.
+- Logistic Regression provided strong baseline generalization.
+- Temporal models (HMM, LSTM) improved recognition of continuous activities (e.g., walking).
 
 
+## Future Work
+-----------
+- Fine-tune deep models with attention mechanisms
+- Extend to real-time inference
+- Improve label balancing and augmentation techniques
 
 
+## Contributing
+------------
+Contributions are welcome.
+Feel free to open an issue, suggest improvements, or submit a pull request.
+
+Steps:
+1. Fork the repository
+2. Create your feature branch: git checkout -b feature-name
+3. Commit your changes
+4. Push to the branch and open a Pull Request
 
 
+## Author
+------
+Despoina Fyka  
+GitHub: https://github.com/DespoinaFyka
 
+
+## References
+----------
+- Vaizman, Y., Ellis, K., & Lanckriet, G. (2017). Recognizing detailed human context in the wild from smartphones and smartwatches data.
+- ExtraSensory Dataset: https://github.com/ExtraSensoryDataset/ExtraSensory
