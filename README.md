@@ -26,11 +26,13 @@ HarProjectPublic/
       <li>main_cnn_lstm.py            </li>
           Hybrid CNN-LSTM model
       <li>main_data_analysis.py       </li>
+          Data analysis methods for the dataset 
       <li>compare_models.py           </li>
           Comparison of all trained models
       <li>analyze_labels_correlation.py   </li>
           Label co-occurrence analysis
       <li>analyze_label_correlation_w_timestamps.py</li>
+          Label co-occurrence analysis with timestamps
       <li>utils/                      
           (Helper functions (data loading, feature projection, etc.))
           <ul>
@@ -42,7 +44,8 @@ HarProjectPublic/
             <li>plotting.py</li>
           </ul>
       </li>
-      <li>results/       # Model evaluation results and metrics per fold/user</li>
+      <li>results/       
+          Model evaluation results and metrics per fold/user</li>
       <li>cv_5_folds/    </li>
           User UUID splits for 5-fold cross-validation
       <li>ExtraSensory.per_uuid_features_labels/   </li>
@@ -58,7 +61,7 @@ HarProjectPublic/
 ## Installation & Setup
 
 ### Prerequisites
-- Python 3.13.3 / 3.11.8
+- Python 3.13.3 and 3.11.8
 - pip and virtual environment recommended
 
 ### Installation
@@ -66,6 +69,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/DespoinaFyka/HarProjectPublic.git
 cd HarProjectPublic
+
 
 
 
