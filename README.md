@@ -67,10 +67,12 @@ HarProjectPublic/
   
 ## Installation
 1. Clone the repository:
+   
    git clone https://github.com/DespoinaFyka/HarProjectPublic.git
+
    cd HarProjectPublic
 
-2. Install dependencies:
+3. Install dependencies:
    pip install -r requirements.txt
 
 
@@ -167,6 +169,7 @@ GitHub: https://github.com/DespoinaFyka
 
 - Vaizman, Y., Ellis, K., & Lanckriet, G. (2017). Recognizing detailed human context in the wild from smartphones and smartwatches data.
 - ExtraSensory Dataset: https://github.com/ExtraSensoryDataset/ExtraSensory
+
 
 
 
